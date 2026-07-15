@@ -9,19 +9,37 @@
 </head>
 <body>
 
-<div id="inicio">
+    <!-- Pantalla de inicio -->
+    <section id="pantallaInicio">
 
-    <div id="papelArrugado">
-        📝
-    </div>
+        <div id="papelArrugado" title="Haz clic para abrir">
+            📝
+        </div>
 
-    <button id="empezar" hidden>
-        Empezar Sorteo
-    </button>
+        <button id="btnEmpezar" hidden>
+            Empezar Sorteo
+        </button>
 
-</div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Pantalla del sorteo -->
+    <section id="pantallaSorteo" class="oculto">
+
+        <h1>Sorteo de Actividades</h1>
+
+        <p id="estado">
+            Esperando...
+        </p>
+
+        <div id="contenedorPapeles">
+
+            <!-- Los 20 papeles se crearán automáticamente desde script.js -->
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
